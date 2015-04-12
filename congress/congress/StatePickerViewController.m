@@ -7,6 +7,8 @@
 //
 
 #import "StatePickerViewController.h"
+#import "Representative.h"
+#import "congressmenDetailViewController.h"
 
 @interface StatePickerViewController ()
 {
@@ -61,4 +63,16 @@ _statePickerData = [NSArray arrayWithObjects:@"Alabama", @"Alaska", @"Arizona", 
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    congressmenDetailViewController *destinationViewController = segue.destinationViewController;
+    
+    destinationViewController.rep = sender;
+    
+}
+
+- (IBAction)findBtn:(id)sender {
+    
+    
+}
 @end

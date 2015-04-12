@@ -23,6 +23,7 @@
 		B784D9E61AD9F761005D19DC /* StatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9E51AD9F761005D19DC /* StatePickerViewController.m */; };
 		B7941CA81AD9FEB500377769 /* NSString+StateName.m in Sources */ = {isa = PBXBuildFile; fileRef = B7941CA71AD9FEB500377769 /* NSString+StateName.m */; };
 		B7941CAA1ADA018900377769 /* USStateAbbreviations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7941CA91ADA018900377769 /* USStateAbbreviations.plist */; };
+		B7941CB01ADA250F00377769 /* congressmenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7941CAF1ADA250F00377769 /* congressmenDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		B7941CA61AD9FEB500377769 /* NSString+StateName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StateName.h"; sourceTree = "<group>"; };
 		B7941CA71AD9FEB500377769 /* NSString+StateName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StateName.m"; sourceTree = "<group>"; };
 		B7941CA91ADA018900377769 /* USStateAbbreviations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USStateAbbreviations.plist; sourceTree = "<group>"; };
+		B7941CAE1ADA250F00377769 /* congressmenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = congressmenDetailViewController.h; sourceTree = "<group>"; };
+		B7941CAF1ADA250F00377769 /* congressmenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = congressmenDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				B784D9B91AD9AAE5005D19DC /* LaunchScreen.xib */,
 				B784D9AE1AD9AAE5005D19DC /* congress.xcdatamodeld */,
 				B784D9A71AD9AAE5005D19DC /* Supporting Files */,
+				B7941CAE1ADA250F00377769 /* congressmenDetailViewController.h */,
+				B7941CAF1ADA250F00377769 /* congressmenDetailViewController.m */,
 			);
 			path = congress;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			files = (
 				B784D9AD1AD9AAE5005D19DC /* AppDelegate.m in Sources */,
 				B784D9B01AD9AAE5005D19DC /* congress.xcdatamodeld in Sources */,
+				B7941CB01ADA250F00377769 /* congressmenDetailViewController.m in Sources */,
 				B784D9D81AD9B0B1005D19DC /* RepresentitiveSearchController.m in Sources */,
 				B784D9DB1AD9B2C4005D19DC /* SearchResultsTableViewController.m in Sources */,
 				B784D9E11AD9F592005D19DC /* StatePicker.m in Sources */,

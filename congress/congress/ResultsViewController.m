@@ -8,6 +8,7 @@
 
 #import "ResultsViewController.h"
 #import "RepresentitiveSearchController.h"
+#import "congressmenDetailViewController.h"
 
 
 @interface ResultsViewController () <UITableViewDataSource>
@@ -15,6 +16,8 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) RepresentitiveSearchController *searchController;
+
+@property (strong, nonatomic) Representative *selectedRep;
 
 @property (strong, nonatomic) NSArray *representatives;
 
@@ -50,6 +53,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"repCell"];
     
     Representative *rep = self.representatives[indexPath.row];
+    _selectedRep = rep;
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@", rep.name];
     cell.detailTextLabel.text = rep.address;
@@ -61,14 +65,17 @@
     return self.representatives.count;
 }
 
-/*
  #pragma mark - Navigation
  
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     NSLog(@"%@", sender);
+     NSLog(@"%@ : ", _selectedRep);
+     congressmenDetailViewController *destinationViewController = segue.destinationViewController;
+     
+     destinationViewController.rep = _selectedRep;
+ 
  }
- */
+
 
 @end
