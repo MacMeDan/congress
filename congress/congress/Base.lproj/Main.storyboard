@@ -117,6 +117,9 @@
                             <constraint firstAttribute="bottom" secondItem="VIy-zx-9uz" secondAttribute="bottom" constant="40" id="ObO-XQ-jyE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="VIy-zx-9uz" id="n7a-eT-0EW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJs-cB-gjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

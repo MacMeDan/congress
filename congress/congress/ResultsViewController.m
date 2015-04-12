@@ -51,7 +51,7 @@
     
     Representative *rep = self.representatives[indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", rep.name, rep.party];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", rep.name];
     cell.detailTextLabel.text = rep.address;
     
     return cell;

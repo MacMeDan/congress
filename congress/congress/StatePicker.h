@@ -10,4 +10,6 @@
 
 @interface StatePicker : UIPickerView
 
+@property (nonatomic, strong)NSArray *stateNames;
+
 @end

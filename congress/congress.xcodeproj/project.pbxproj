@@ -21,6 +21,8 @@
 		B784D9DE1AD9B31E005D19DC /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9DD1AD9B31E005D19DC /* ResultsViewController.m */; };
 		B784D9E11AD9F592005D19DC /* StatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9E01AD9F592005D19DC /* StatePicker.m */; };
 		B784D9E61AD9F761005D19DC /* StatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9E51AD9F761005D19DC /* StatePickerViewController.m */; };
+		B7941CA81AD9FEB500377769 /* NSString+StateName.m in Sources */ = {isa = PBXBuildFile; fileRef = B7941CA71AD9FEB500377769 /* NSString+StateName.m */; };
+		B7941CAA1ADA018900377769 /* USStateAbbreviations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7941CA91ADA018900377769 /* USStateAbbreviations.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		B784D9E01AD9F592005D19DC /* StatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatePicker.m; sourceTree = "<group>"; };
 		B784D9E41AD9F761005D19DC /* StatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePickerViewController.h; sourceTree = "<group>"; };
 		B784D9E51AD9F761005D19DC /* StatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatePickerViewController.m; sourceTree = "<group>"; };
+		B7941CA61AD9FEB500377769 /* NSString+StateName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StateName.h"; sourceTree = "<group>"; };
+		B7941CA71AD9FEB500377769 /* NSString+StateName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StateName.m"; sourceTree = "<group>"; };
+		B7941CA91ADA018900377769 /* USStateAbbreviations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USStateAbbreviations.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 		B784D9A71AD9AAE5005D19DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B7941CA91ADA018900377769 /* USStateAbbreviations.plist */,
 				B784D9A81AD9AAE5005D19DC /* Info.plist */,
 				B784D9A91AD9AAE5005D19DC /* main.m */,
 			);
@@ -164,6 +170,8 @@
 				B784D9E01AD9F592005D19DC /* StatePicker.m */,
 				B784D9E41AD9F761005D19DC /* StatePickerViewController.h */,
 				B784D9E51AD9F761005D19DC /* StatePickerViewController.m */,
+				B7941CA61AD9FEB500377769 /* NSString+StateName.h */,
+				B7941CA71AD9FEB500377769 /* NSString+StateName.m */,
 			);
 			name = SearchByState;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 			files = (
 				B784D9B61AD9AAE5005D19DC /* Main.storyboard in Resources */,
 				B784D9BB1AD9AAE5005D19DC /* LaunchScreen.xib in Resources */,
+				B7941CAA1ADA018900377769 /* USStateAbbreviations.plist in Resources */,
 				B784D9B81AD9AAE5005D19DC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +284,7 @@
 				B784D9E11AD9F592005D19DC /* StatePicker.m in Sources */,
 				B784D9D21AD9AB82005D19DC /* congressmenTableViewController.m in Sources */,
 				B784D9DE1AD9B31E005D19DC /* ResultsViewController.m in Sources */,
+				B7941CA81AD9FEB500377769 /* NSString+StateName.m in Sources */,
 				B784D9D51AD9AFFB005D19DC /* Representative.m in Sources */,
 				B784D9E61AD9F761005D19DC /* StatePickerViewController.m in Sources */,
 				B784D9AA1AD9AAE5005D19DC /* main.m in Sources */,
@@ -476,6 +486,7 @@
 				B784D9CC1AD9AAE5005D19DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B784D9CD1AD9AAE5005D19DC /* Build configuration list for PBXNativeTarget "congressTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +495,7 @@
 				B784D9CF1AD9AAE5005D19DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
