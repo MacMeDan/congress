@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B784D9AA1AD9AAE5005D19DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9A91AD9AAE5005D19DC /* main.m */; };
+		B784D9AD1AD9AAE5005D19DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9AC1AD9AAE5005D19DC /* AppDelegate.m */; };
+		B784D9B01AD9AAE5005D19DC /* congress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B784D9AE1AD9AAE5005D19DC /* congress.xcdatamodeld */; };
+		B784D9B61AD9AAE5005D19DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B784D9B41AD9AAE5005D19DC /* Main.storyboard */; };
+		B784D9B81AD9AAE5005D19DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B784D9B71AD9AAE5005D19DC /* Images.xcassets */; };
+		B784D9BB1AD9AAE5005D19DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B784D9B91AD9AAE5005D19DC /* LaunchScreen.xib */; };
+		B784D9C71AD9AAE5005D19DC /* congressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9C61AD9AAE5005D19DC /* congressTests.m */; };
+		B784D9D21AD9AB82005D19DC /* congressmenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9D11AD9AB82005D19DC /* congressmenTableViewController.m */; };
+		B784D9D51AD9AFFB005D19DC /* Representative.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9D41AD9AFFB005D19DC /* Representative.m */; };
+		B784D9D81AD9B0B1005D19DC /* RepresentitiveSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9D71AD9B0B1005D19DC /* RepresentitiveSearchController.m */; };
+		B784D9DB1AD9B2C4005D19DC /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9DA1AD9B2C4005D19DC /* SearchResultsTableViewController.m */; };
+		B784D9DE1AD9B31E005D19DC /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9DD1AD9B31E005D19DC /* ResultsViewController.m */; };
+		B784D9E11AD9F592005D19DC /* StatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9E01AD9F592005D19DC /* StatePicker.m */; };
+		B784D9E61AD9F761005D19DC /* StatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784D9E51AD9F761005D19DC /* StatePickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B784D9C11AD9AAE5005D19DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B784D99C1AD9AAE5005D19DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B784D9A31AD9AAE5005D19DC;
+			remoteInfo = congress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B784D9A41AD9AAE5005D19DC /* congress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = congress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B784D9A81AD9AAE5005D19DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B784D9A91AD9AAE5005D19DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B784D9AB1AD9AAE5005D19DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B784D9AC1AD9AAE5005D19DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B784D9AF1AD9AAE5005D19DC /* congress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = congress.xcdatamodel; sourceTree = "<group>"; };
+		B784D9B51AD9AAE5005D19DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B784D9B71AD9AAE5005D19DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B784D9BA1AD9AAE5005D19DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B784D9C01AD9AAE5005D19DC /* congressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = congressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B784D9C51AD9AAE5005D19DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B784D9C61AD9AAE5005D19DC /* congressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = congressTests.m; sourceTree = "<group>"; };
+		B784D9D01AD9AB82005D19DC /* congressmenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = congressmenTableViewController.h; sourceTree = "<group>"; };
+		B784D9D11AD9AB82005D19DC /* congressmenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = congressmenTableViewController.m; sourceTree = "<group>"; };
+		B784D9D31AD9AFFB005D19DC /* Representative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Representative.h; sourceTree = "<group>"; };
+		B784D9D41AD9AFFB005D19DC /* Representative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Representative.m; sourceTree = "<group>"; };
+		B784D9D61AD9B0B1005D19DC /* RepresentitiveSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RepresentitiveSearchController.h; path = ../../RepresentitiveSearchController.h; sourceTree = "<group>"; };
+		B784D9D71AD9B0B1005D19DC /* RepresentitiveSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RepresentitiveSearchController.m; path = ../../RepresentitiveSearchController.m; sourceTree = "<group>"; };
+		B784D9D91AD9B2C4005D19DC /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		B784D9DA1AD9B2C4005D19DC /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		B784D9DC1AD9B31E005D19DC /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		B784D9DD1AD9B31E005D19DC /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		B784D9DF1AD9F592005D19DC /* StatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePicker.h; sourceTree = "<group>"; };
+		B784D9E01AD9F592005D19DC /* StatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatePicker.m; sourceTree = "<group>"; };
+		B784D9E41AD9F761005D19DC /* StatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePickerViewController.h; sourceTree = "<group>"; };
+		B784D9E51AD9F761005D19DC /* StatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatePickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B784D9A11AD9AAE5005D19DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B784D9BD1AD9AAE5005D19DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B784D99B1AD9AAE5005D19DC = {
+			isa = PBXGroup;
+			children = (
+				B784D9A61AD9AAE5005D19DC /* congress */,
+				B784D9C31AD9AAE5005D19DC /* congressTests */,
+				B784D9A51AD9AAE5005D19DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B784D9A51AD9AAE5005D19DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9A41AD9AAE5005D19DC /* congress.app */,
+				B784D9C01AD9AAE5005D19DC /* congressTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B784D9A61AD9AAE5005D19DC /* congress */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9E31AD9F722005D19DC /* SearchByState */,
+				B784D9E21AD9F68B005D19DC /* SearchByZipCode */,
+				B784D9AB1AD9AAE5005D19DC /* AppDelegate.h */,
+				B784D9AC1AD9AAE5005D19DC /* AppDelegate.m */,
+				B784D9D31AD9AFFB005D19DC /* Representative.h */,
+				B784D9D41AD9AFFB005D19DC /* Representative.m */,
+				B784D9B41AD9AAE5005D19DC /* Main.storyboard */,
+				B784D9B71AD9AAE5005D19DC /* Images.xcassets */,
+				B784D9B91AD9AAE5005D19DC /* LaunchScreen.xib */,
+				B784D9AE1AD9AAE5005D19DC /* congress.xcdatamodeld */,
+				B784D9A71AD9AAE5005D19DC /* Supporting Files */,
+			);
+			path = congress;
+			sourceTree = "<group>";
+		};
+		B784D9A71AD9AAE5005D19DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9A81AD9AAE5005D19DC /* Info.plist */,
+				B784D9A91AD9AAE5005D19DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B784D9C31AD9AAE5005D19DC /* congressTests */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9C61AD9AAE5005D19DC /* congressTests.m */,
+				B784D9C41AD9AAE5005D19DC /* Supporting Files */,
+			);
+			path = congressTests;
+			sourceTree = "<group>";
+		};
+		B784D9C41AD9AAE5005D19DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9C51AD9AAE5005D19DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B784D9E21AD9F68B005D19DC /* SearchByZipCode */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9D01AD9AB82005D19DC /* congressmenTableViewController.h */,
+				B784D9D11AD9AB82005D19DC /* congressmenTableViewController.m */,
+				B784D9D61AD9B0B1005D19DC /* RepresentitiveSearchController.h */,
+				B784D9D71AD9B0B1005D19DC /* RepresentitiveSearchController.m */,
+				B784D9DC1AD9B31E005D19DC /* ResultsViewController.h */,
+				B784D9DD1AD9B31E005D19DC /* ResultsViewController.m */,
+				B784D9D91AD9B2C4005D19DC /* SearchResultsTableViewController.h */,
+				B784D9DA1AD9B2C4005D19DC /* SearchResultsTableViewController.m */,
+			);
+			name = SearchByZipCode;
+			sourceTree = "<group>";
+		};
+		B784D9E31AD9F722005D19DC /* SearchByState */ = {
+			isa = PBXGroup;
+			children = (
+				B784D9DF1AD9F592005D19DC /* StatePicker.h */,
+				B784D9E01AD9F592005D19DC /* StatePicker.m */,
+				B784D9E41AD9F761005D19DC /* StatePickerViewController.h */,
+				B784D9E51AD9F761005D19DC /* StatePickerViewController.m */,
+			);
+			name = SearchByState;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B784D9A31AD9AAE5005D19DC /* congress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B784D9CA1AD9AAE5005D19DC /* Build configuration list for PBXNativeTarget "congress" */;
+			buildPhases = (
+				B784D9A01AD9AAE5005D19DC /* Sources */,
+				B784D9A11AD9AAE5005D19DC /* Frameworks */,
+				B784D9A21AD9AAE5005D19DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = congress;
+			productName = congress;
+			productReference = B784D9A41AD9AAE5005D19DC /* congress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B784D9BF1AD9AAE5005D19DC /* congressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B784D9CD1AD9AAE5005D19DC /* Build configuration list for PBXNativeTarget "congressTests" */;
+			buildPhases = (
+				B784D9BC1AD9AAE5005D19DC /* Sources */,
+				B784D9BD1AD9AAE5005D19DC /* Frameworks */,
+				B784D9BE1AD9AAE5005D19DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B784D9C21AD9AAE5005D19DC /* PBXTargetDependency */,
+			);
+			name = congressTests;
+			productName = congressTests;
+			productReference = B784D9C01AD9AAE5005D19DC /* congressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B784D99C1AD9AAE5005D19DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Macme;
+				TargetAttributes = {
+					B784D9A31AD9AAE5005D19DC = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B784D9BF1AD9AAE5005D19DC = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B784D9A31AD9AAE5005D19DC;
+					};
+				};
+			};
+			buildConfigurationList = B784D99F1AD9AAE5005D19DC /* Build configuration list for PBXProject "congress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B784D99B1AD9AAE5005D19DC;
+			productRefGroup = B784D9A51AD9AAE5005D19DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B784D9A31AD9AAE5005D19DC /* congress */,
+				B784D9BF1AD9AAE5005D19DC /* congressTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B784D9A21AD9AAE5005D19DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B784D9B61AD9AAE5005D19DC /* Main.storyboard in Resources */,
+				B784D9BB1AD9AAE5005D19DC /* LaunchScreen.xib in Resources */,
+				B784D9B81AD9AAE5005D19DC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B784D9BE1AD9AAE5005D19DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B784D9A01AD9AAE5005D19DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B784D9AD1AD9AAE5005D19DC /* AppDelegate.m in Sources */,
+				B784D9B01AD9AAE5005D19DC /* congress.xcdatamodeld in Sources */,
+				B784D9D81AD9B0B1005D19DC /* RepresentitiveSearchController.m in Sources */,
+				B784D9DB1AD9B2C4005D19DC /* SearchResultsTableViewController.m in Sources */,
+				B784D9E11AD9F592005D19DC /* StatePicker.m in Sources */,
+				B784D9D21AD9AB82005D19DC /* congressmenTableViewController.m in Sources */,
+				B784D9DE1AD9B31E005D19DC /* ResultsViewController.m in Sources */,
+				B784D9D51AD9AFFB005D19DC /* Representative.m in Sources */,
+				B784D9E61AD9F761005D19DC /* StatePickerViewController.m in Sources */,
+				B784D9AA1AD9AAE5005D19DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B784D9BC1AD9AAE5005D19DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B784D9C71AD9AAE5005D19DC /* congressTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B784D9C21AD9AAE5005D19DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B784D9A31AD9AAE5005D19DC /* congress */;
+			targetProxy = B784D9C11AD9AAE5005D19DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B784D9B41AD9AAE5005D19DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B784D9B51AD9AAE5005D19DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B784D9B91AD9AAE5005D19DC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B784D9BA1AD9AAE5005D19DC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B784D9C81AD9AAE5005D19DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B784D9C91AD9AAE5005D19DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B784D9CB1AD9AAE5005D19DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = congress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B784D9CC1AD9AAE5005D19DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = congress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B784D9CE1AD9AAE5005D19DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = congressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/congress.app/congress";
+			};
+			name = Debug;
+		};
+		B784D9CF1AD9AAE5005D19DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = congressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/congress.app/congress";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B784D99F1AD9AAE5005D19DC /* Build configuration list for PBXProject "congress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B784D9C81AD9AAE5005D19DC /* Debug */,
+				B784D9C91AD9AAE5005D19DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B784D9CA1AD9AAE5005D19DC /* Build configuration list for PBXNativeTarget "congress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B784D9CB1AD9AAE5005D19DC /* Debug */,
+				B784D9CC1AD9AAE5005D19DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B784D9CD1AD9AAE5005D19DC /* Build configuration list for PBXNativeTarget "congressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B784D9CE1AD9AAE5005D19DC /* Debug */,
+				B784D9CF1AD9AAE5005D19DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B784D9AE1AD9AAE5005D19DC /* congress.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B784D9AF1AD9AAE5005D19DC /* congress.xcdatamodel */,
+			);
+			currentVersion = B784D9AF1AD9AAE5005D19DC /* congress.xcdatamodel */;
+			path = congress.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B784D99C1AD9AAE5005D19DC /* Project object */;
+}
