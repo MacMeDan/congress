@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) NSString *url;
 
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end

@@ -12,5 +12,10 @@
 @interface RepresentitiveSearchController : NSObject
 
 - (void)representativesByZipCode:(NSString *)zip completion:(void (^)(NSArray * reps))completion;
+-(void)representativesByState:(NSString *)state completion:(void (^)(NSArray * reps))completion;
+-(void)representativesByName:(NSString *)state completion:(void (^)(NSArray * reps))completion;
+-(void)allRepresentatives: (void (^)(NSArray * reps))completion;
+
+
 
 @end

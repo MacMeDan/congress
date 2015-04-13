@@ -21,6 +21,7 @@ static NSString * const URLKey = @"link";
 {
     self = [super init];
     if (self) {
+        
         self.name = dictionary[NameKey];
         self.party = dictionary[PartyKey];
         self.state = dictionary[StateKey];

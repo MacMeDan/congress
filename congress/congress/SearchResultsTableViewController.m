@@ -7,7 +7,7 @@
 //
 
 #import "SearchResultsTableViewController.h"
-#import "ResultsViewController.h"
+#import "ZipResultsViewController.h"
 
 @interface SearchResultsTableViewController ()
 
@@ -28,7 +28,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    ResultsViewController *destinationViewController = segue.destinationViewController;
+    ZipResultsViewController *destinationViewController = segue.destinationViewController;
     
     destinationViewController.zipCode = self.zipCodeField.text;
     

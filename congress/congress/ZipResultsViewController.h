@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResultsViewController : UIViewController
+@interface ZipResultsViewController : UIViewController
 
 @property (strong, nonatomic) NSString *zipCode;
 

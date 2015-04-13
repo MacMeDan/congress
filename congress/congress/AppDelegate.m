@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -44,6 +45,18 @@
     [self saveContext];
 }
 
+#pragma mark AFNetworkReachability
+
+-(void)networkConnectivityChanged:(NSNotification *)notification
+{
+    if (![NSThread isMainThread]) {
+        [self performSelectorOnMainThread:@selector(networkConnectivityChanged:) withObject:notification waitUntilDone:NO];
+        return;
+    }
+    
+}
+
+
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -60,7 +73,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Congress" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Congress" withExtension:@"representativeCore"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }

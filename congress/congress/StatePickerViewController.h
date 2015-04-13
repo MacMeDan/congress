@@ -11,6 +11,7 @@
 @interface StatePickerViewController : UIViewController < UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
-- (IBAction)findBtn:(id)sender;
+
+
 
 @end

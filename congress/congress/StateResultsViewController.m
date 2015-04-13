@@ -1,17 +1,18 @@
 //
-//  ResultsViewController.m
+//  StateResultsViewController.m
 //  congress
 //
-//  Created by P Leonard on 4/11/15.
+//  Created by P Leonard on 4/12/15.
 //  Copyright (c) 2015 Macme. All rights reserved.
 //
 
-#import "ResultsViewController.h"
+#import "StateResultsViewController.h"
 #import "RepresentitiveSearchController.h"
 #import "congressmenDetailViewController.h"
+#import "StatePicker.h"
 
 
-@interface ResultsViewController () <UITableViewDataSource>
+@interface StateResultsViewController () <UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -23,17 +24,18 @@
 
 @end
 
-@implementation ResultsViewController
+@implementation StateResultsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Set the title of the view to the zip code that was entered into the search feild. Giving the user context of what the results relate too.
-    self.title = self.zipCode;
+    self.title = self.state;
+    NSLog(@"%@", self.state);
     
     self.searchController = [RepresentitiveSearchController new];
     
-    [self.searchController representativesByZipCode:self.zipCode completion:^(NSArray *reps) {
+    [self.searchController representativesByState:self.state completion:^(NSArray *reps) {
         self.representatives = reps;
         
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -53,7 +55,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"repCell"];
     
     Representative *rep = self.representatives[indexPath.row];
-    _selectedRep = rep;
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@", rep.name];
     cell.detailTextLabel.text = rep.address;
@@ -65,17 +66,17 @@
     return self.representatives.count;
 }
 
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     NSLog(@"%@", sender);
-     NSLog(@"%@ : ", _selectedRep);
-     congressmenDetailViewController *destinationViewController = segue.destinationViewController;
-     
-     destinationViewController.rep = _selectedRep;
- 
- }
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"%@", [sender valueForKey:@"text"]);
+    NSLog(@"%@ : ", _selectedRep);
+    
+    congressmenDetailViewController *destinationViewController = segue.destinationViewController;
+    
+//    destinationViewController.repName = [sender valueForKey:@"text"];
+    
+}
 
 @end
