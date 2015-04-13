@@ -68,8 +68,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     StateResultsViewController * destinationViewController = segue.destinationViewController;
-//    [self.pickerView sele]
-    NSLog(@"%@",segue);
+    
+    //TODO: get current state in picker and send it to resutls table.
     destinationViewController.state = state;
 }
 

@@ -70,12 +70,17 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"%@", [sender valueForKey:@"text"]);
-    NSLog(@"%@ : ", _selectedRep);
-    
+   
+       
     congressmenDetailViewController *destinationViewController = segue.destinationViewController;
     
-//    destinationViewController.repName = [sender valueForKey:@"text"];
+    Representative *sendRep;
+    
+    for (sendRep in self.representatives) {
+        if ([[sendRep valueForKey:@"name"]isEqualToString:[sender valueForKey:@"text"]]){
+            destinationViewController.rep = sendRep;
+        }
+    }
     
 }
 
